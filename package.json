@@ -1,0 +1,21 @@
+{
+  "name": "woodpecker-plugin-ghost-deploy-theme",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "build": "ncc build",
+    "lint": "prettier --write .",
+    "dist": "yarn lint && yarn build"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.1",
+    "prettier": "^3.0.3"
+  },
+  "dependencies": {
+    "@tryghost/admin-api": "^1.13.10"
+  }
+}

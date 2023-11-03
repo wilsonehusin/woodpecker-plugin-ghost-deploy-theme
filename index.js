@@ -5,8 +5,8 @@ const { pipeline } = require("stream/promises");
 const { execSync } = require("child_process");
 const ghostAdmin = require("@tryghost/admin-api");
 
-const adminHost = process.env.PLUGIN_ADMIN_HOST;
-const apiKey = process.env.PLUGIN_API_KEY;
+const adminHost = process.env.GHOST_ADMIN_HOST;
+const apiKey = process.env.GHOST_ADMIN_API_KEY;
 const protocol = process.env.PLUGIN_INSECURE ? "http" : "https";
 const execOpts = process.env.PLUGIN_PATH
   ? { cwd: process.env.PLUGIN_PATH }

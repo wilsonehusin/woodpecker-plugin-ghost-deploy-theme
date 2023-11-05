@@ -5,7 +5,7 @@ steps:
   deploy:
     image: ghcr.io/wilsonehusin/woodpecker-plugin-ghost-deploy-theme
     pull: true
-    secrets: [ ghost_admin_host, ghost_admin_api_key ]
+    secrets: [ghost_admin_host, ghost_admin_api_key]
     settings:
       # Optional: relative path to theme from root of repository
       path: "."

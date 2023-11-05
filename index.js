@@ -86,6 +86,7 @@ async function main() {
   try {
     await ping();
 
+    sh("yarn install");
     sh("yarn zip");
     const files = sh("ls -a dist/*.zip").toString().trim().split("\n");
     if (files.length !== 1)
